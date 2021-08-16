@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingEnd="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:id="@+id/relativeLayout"
+    tools:context=".Questions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/que"
+        android:layout_below="@id/user"
+        android:layout_marginTop="200dp"
+        android:text="Questions"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rad_group"
+        android:layout_alignLeft="@id/que"
+        android:layout_centerVertical="true"
+        android:clickable="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobutton1"
+            android:text="A"
+            android:checked="false"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobutton2"
+            android:text="B"
+            android:checked="false"/>
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiobutton3"
+        android:text="C"
+        android:checked="false"/>
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiobutton4"
+        android:text="D"
+        android:checked="false"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rad_group"
+        android:layout_marginTop="29dp"
+        android:text="Next"
+        android:background="#30DAC5"
+        android:id="@+id/next" />
+
+
+
+
+</RelativeLayout>
